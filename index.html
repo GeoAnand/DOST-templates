@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Homepage</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+  <!-- lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+   <!-- oswald-fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="Customized bootstrap/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!-- header script -->
+  <script>
+    $(document).ready(function(){
+      $('.dropdown-submenu a.test').on("click", function(e){
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+    </script>
+
+  <!-- JS to call Header & footer (starts) -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+
+  <!-- <script> 
+    $(function(){
+      $("#header").load("./header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script>  -->
+    <!-- JS to call Header & footer (Ends)-->
+
+
+</head>
+
+<body>
+  <!-- nav bar starts -->
+
+<!-- Topbar Start -->
+<div class="container-fluid px-0 d-none d-lg-block">
+    <div class="row gx-0" style="padding: 0px 0px 0px 0px; background-color: #000;">
+        <div class="col-lg-4 text-center border-inner-0 py-3">
+            <div class="d-inline-flex align-items-center justify-content-center">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/navbar/Logo.png" class="main-logo">
+                    <!-- <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>CakeZone</h1> -->                    </a>
+            </div>
+        </div>
+        <div class="col-lg-2 text-center py-3">
+            <div class="d-inline-flex align-items-center justify-content-center">
+                <i class="bi bi-chat fs-1 top-header-icon me-3"></i>
+                <div class="text-start">
+                    <a href="#">
+                    <h6 class="text-capitalize mb-1 top-bar-heading">Confidential Box</h6>    
+                </a>                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-2 text-center py-3">
+            <div class="d-inline-flex align-items-center justify-content-center">
+                <i class="bi bi-person-plus fs-1 top-header-icon me-3"></i>
+                <div class="text-start">
+                    <a href="#">
+                    <h6 class="text-capitalize mb-1 top-bar-heading">Sign Up</h6>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 text-center py-3">
+            <div class="d-inline-flex align-items-center justify-content-center">
+                <i class="bi bi-box-arrow-in-right fs-1 top-header-icon me-3"></i>
+                <div class="text-start">
+                    <a href="#">
+                    <h6 class="text-capitalize mb-1 top-bar-heading">Login</h6> 
+                </a>                       
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 text-center py-3">
+            <div class="d-inline-flex align-items-center justify-content-center">
+                <i class="bi bi-search fs-1 top-header-icon me-3"></i>
+                <div class="text-start">
+                    <h6 class="text-capitalize mb-1 top-bar-heading">Search</h6>                      
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- Topbar End -->
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0" style="background: linear-gradient(90deg, #57EBDE 4.13%, #AEFB2A 100%);">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <!-- <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>CakeZone</h1> -->
+        <img src="images/navbar/DoStLogo_20220411_black.svg" class="main-logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto mx-lg-auto py-0">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">New Students</a>
+                <div class="dropdown-menu m-0" style="background-color: #333; padding: 0px;">
+                    <a href="new-students.html" class="dropdown-item">Welcome</a>
+                    <a href="https://docs.google.com/document/d/1TSwpAFudH1GWu3WZXirqLrpFa42j31WzwCEvG-I2Y7c/edit" class="dropdown-item">Fresher's Guidebook</a>
+                    <a href="https://students.iitm.ac.in/storyofyou/" class="dropdown-item">A Day at IITM</a>
+                    <a href="https://enggunit.iitm.ac.in/includes/pdf/campusmap.pdf" class="dropdown-item">Institute Map</a>
+                    <a href="nearby-hotels.html" class="dropdown-item">Nearby Hotels</a>
+                    <a href="about-chennai.html" class="dropdown-item">About Chennai</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Activities & Clubs</a>
+                <div class="dropdown-menu m-0" style="background-color: #333; padding: 0px;">
+                    <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#" >Prize & Rewards<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #333; padding: 0px;">
+                          <li><a class="dropdown-item" href="#">Scholarships</a></li>
+                          <li><a class="dropdown-item" href="#">Institute Blues</a></li>
+                          <li><a class="dropdown-item" href="#">Celebrating Success</a></li>
+                        </ul>
+                      </li>
+                    <a href="#" class="dropdown-item">Student Festivals</a>
+                    <a href="#" class="dropdown-item">Technical</a>
+                    <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#" >Cultural<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #333; padding: 0px;">
+                          <li><a class="dropdown-item" href="#">Overview</a></li>
+                          <li><a class="dropdown-item" href="#">L-TAP</a></li>
+                          <li><a class="dropdown-item" href="#">The Fifth Estate</a></li>
+                          <li><a class="dropdown-item" href="#">Extra Mural Lectures</a></li>
+                          <li><a class="dropdown-item" href="#">Kenyon-IITM Writing Workshop</a></li>
+                        </ul>
+                      </li>
+                    <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#" >Social Impact<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #333; padding: 0px;">
+                          <li><a class="dropdown-item" href="#">IIT for Villages (iVil)</a></li>
+                          <li><a class="dropdown-item" href="#">NCC, NSO, & NSS</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#" >Enterpreneurship<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #333; padding: 0px;">
+                          <li><a class="dropdown-item" href="#">Enterpreneurship Cell</a></li>
+                          <li><a class="dropdown-item" href="#">Nirmaan</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#" >Sports<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #333; padding: 0px;">
+                          <li><a class="dropdown-item" href="#">Overview</a></li>
+                          <li><a class="dropdown-item" href="#">Gymkhana Registration</a></li>
+                          <li><a class="dropdown-item" href="#">Highlights & Achievements</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#" >Student Government<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #333; padding: 0px;">
+                          <li><a class="dropdown-item" href="#">Student Representatives</a></li>
+                          <li><a class="dropdown-item" href="#">Meeting Minutes</a></li>
+                          <li><a class="dropdown-item" href="#">Elections</a></li>
+                        </ul>
+                      </li>
+                    <a href="#" class="dropdown-item">Independent Student Bodies</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hostels & Mess</a>
+                <div class="dropdown-menu m-0" style="background-color: #333; padding: 0px;">
+                    <a href="#" class="dropdown-item">Office of Hostel Management</a>
+                    <a href="#" class="dropdown-item">Contact Your Hostel</a>
+                    <a href="#" class="dropdown-item">Mess Registration</a>
+                    <a href="#" class="dropdown-item">Pay Hostel & Mess Fees</a>
+                    <a href="#" class="dropdown-item">Day Scholar Form</a>
+                    <a href="#" class="dropdown-item">Book Hostel Accommodation</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Career Prep</a>
+                <div class="dropdown-menu m-0" style="background-color: #333; padding: 0px;">
+                    <a href="#" class="dropdown-item">Placement Office</a>
+                    <a href="#" class="dropdown-item">Internship Office</a>
+                    <a href="#" class="dropdown-item">Career Development Cell</a>
+                    <a href="#" class="dropdown-item">New India Internship</a>                    
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services & Information</a>
+                <div class="dropdown-menu m-0" style="background-color: #333; padding: 0px;">
+                    <a href="#" class="dropdown-item">Events & Announcements</a>
+                    <a href="#" class="dropdown-item">COVID–19 Guidelines</a>
+                    <a href="#" class="dropdown-item">Academic Transcript</a>
+                    <a href="#" class="dropdown-item">Anti-ragging Policy</a>
+                    <a href="#" class="dropdown-item">Book Venues & Buses</a>
+                    <a href="#" class="dropdown-item">Submit Posters for LCD Screens</a>
+                    <a href="#" class="dropdown-item">Telephone Directory</a>
+                    <a href="#" class="dropdown-item">Store/Restaurant Feedback (CMGFS)</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Community Care</a>
+                <div class="dropdown-menu m-0" style="background-color: #333; padding: 0px;">
+                    <a href="#" class="dropdown-item">Wellness Centre</a>
+                    <a href="#" class="dropdown-item">Support Services for Students with Disabilities</a>
+                    <a href="#" class="dropdown-item">Mental Health Support Resources</a>                    
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                <div class="dropdown-menu m-0" style="background-color: #333; padding: 0px;">
+                    <a href="dean-students.html" class="dropdown-item">The Dean (Students)</a>
+                    <a href="#" class="dropdown-item">Our Team</a>
+                    <a href="other-IITs.html" class="dropdown-item">Other IITs</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Navbar End -->
+
+<!-- nav bar ends -->
+
+
+<!-- page content starts -->
+<!-- <section class="video-sec">
+<video playsinline autoplay muted loop>
+    <source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/mp4" class="homepage-video">
+</video>
+
+<header class="homepage-hero">
+  
+  
+    <div class="homepage-hero-inner">
+      
+      <h1 class="homepage-hero-headline">Welcome to IIT Madras</h1>
+      <p class="homepage-video-content">Your journey starts here in the 620-acre, biodiverse campus a space that enables you to shape your dreams, connect with the best, and soar to success.<br><br>
+
+        The DoSt Office facilitates your life on campus and beyond.</p>
+      
+      
+    </div>
+    
+  </header>
+</section> -->
+
+<section class="fullsize-video-bg">
+	<div class="inner">
+        <div class="row" style="padding: 0;">
+            <div class="col-md-6">
+                <h1 class="homepage-video-headline">Welcome to IIT Madras</h1>
+      <p class="homepage-video-content">Your journey starts here in the 620-acre, biodiverse campus a space that enables you to shape your dreams, connect with the best, and soar to success.<br><br>
+
+        The DoSt Office facilitates your life on campus and beyond.
+            </div>
+            <div class="col-md-6">
+                <div class="current-events">
+                    <h3>Current Events</h3>
+                    <div class="events_list">
+                        <h5>IITM Observes International Day of Yoga</h5>
+                        <p>21 JULY 2023 • 6:30 AM & 5:00 PM • MANOHAR C WATSA STADIUM</p>
+                    </div>
+                    <div class="events_list">
+                        <h5>IITM Observes International Day of Yoga</h5>
+                        <p>21 JULY 2023 • 6:30 AM & 5:00 PM • MANOHAR C WATSA STADIUM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+	</div>
+	<div id="video-viewport">
+		<video width="1600" height="450" autoplay muted loop>
+			<source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/mp4" />
+			<source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/webm" />
+		</video>
+	</div>
+</section>
+<!-- video end -->
+
+<section class="Home_sec_2" >
+    <div class="container" style="max-width: 1600px;">    
+    <div class="row" style="padding: 0;">
+        <div class="col-md-6 happening-column">
+            <h3 class="Happening">Happening Now</h3>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">Mess registration opens on 5 August 2022</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">REGISTRATIONS</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">Improving Accessibility and Inclusion with Yali Mobility</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">EVENTS</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">Long title for test purposes. IIT Madras wins NIRF Ranking 01 for 2022</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">AWARDS</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">L–TAP classes announced for July–Nov 2022. Registrations open 22 July</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">REGISTRATIONS</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">IITM Observes International Day of Yoga</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">HEALTH</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <div class="hp-announcement-button">
+                    <a href="#">
+                    <button type="button" class="btn Announcements">All Events & Announcements</button>
+                </a>            
+                </div> 
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row" style="padding: 0px;">
+                <div class="col-sm-4 HP-green-bg" style="padding: 0px;">
+                    <div class="HP-green">
+                        <a href="#">
+                        <img src="images/page-images/icons/mess-reg.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-black">Mess Registration</h5>
+                        </a>
+                    </div>                    
+                </div>
+                <div class="col-sm-4 HP-black-bg" style="padding: 0px;">
+                    <div class="HP-black">
+                        <a href="#">
+                        <img src="images/page-images/icons/Gymkhana.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-white">Gymkhana Registration</h5>
+                    </a>
+                    </div>                    
+                </div>
+                <div class="col-sm-4 HP-blue-bg" style="padding: 0px;">
+                    <div class="HP-blue">
+                        <a href="#">
+                        <img src="images/page-images/icons/Day-scholar.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-black">Day Scholar Form</h5>
+                    </a>
+                    </div>                    
+                </div>                
+            </div>
+            <div class="row" style="padding: 0px;">
+                <div class="col-sm-4 HP-blue-bg" style="padding: 0px;">
+                    <div class="HP-blue">
+                        <a href="#">
+                        <img src="images/page-images/icons/Venues.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-black">Book Venues & Buses</h5>
+                    </a>
+                    </div>                    
+                </div>
+                <div class="col-sm-4 HP-green-bg" style="padding: 0px;">
+                    <div class="HP-green">
+                        <a href="#">
+                        <img src="images/page-images/icons/LCD.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-black">Submit Posters for LCD Screens</h5>
+                    </a>
+                    </div>                    
+                </div>
+                <div class="col-sm-4 HP-black-bg" style="padding: 0px;">
+                    <div class="HP-black">
+                        <a href="#">
+                        <img src="images/page-images/icons/Stores.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-white">Stores & Restaurant Feedback</h5>
+                    </a>
+                    </div>                    
+                </div>                
+            </div>
+            <div class="row" style="padding: 0px;">
+                <div class="col-sm-4 HP-black-bg" style="padding: 0px;">
+                    <div class="HP-black">
+                        <a href="#">
+                        <img src="images/page-images/icons/L-tap.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-white">L-TAP Courses</h5>
+                    </a>
+                    </div>                    
+                </div>
+                <div class="col-sm-4 HP-blue-bg" style="padding: 0px;">
+                    <div class="HP-blue">
+                        <a href="#">
+                        <img src="images/page-images/icons/St-election.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-black">Student Elections</h5>
+                    </a>
+                    </div>                    
+                </div>
+                <div class="col-sm-4 HP-green-bg" style="padding: 0px;">
+                    <div class="HP-green">
+                        <a href="#">
+                        <img src="images/page-images/icons/Anti-ragging.svg" alt="mess-reg" class="mess-reg">
+                        <h5 class="hp-quicklinks-name-black">Anti-ragging Policy</h5>
+                    </a>
+                    </div>                    
+                </div>                
+            </div>
+            
+        </div>
+    </div>
+   </div>
+</section>
+
+<section class="HP-dean">
+    <div class="container">
+        <div class="row" style="padding: 40px 0px 25px 0px;">
+            <div class="col-md-12">
+                <h2 class="meet-dean">Meet the Dean</h2>
+            </div>
+        </div>
+        
+        <div class="row" style="padding: 20px 0px 50px 0px;">
+            <div class="col-md-6">
+                <img src="images/page-images/njvasa.png" alt="dean" class="meet-dean-video">
+
+            </div>
+            <div class="col-md-6 hp-meet-dean">
+                <p class="meet-dean-content">Prof. Nilesh J Vasa has been serving as Dean (Students) since 2020. He is a faculty in the department of Engineering Design and his research focuses on laser applications. He holds a Doctorate in Engineering from Kyushu University, Fukoka.<br><br>
+
+                    In his capacity as Dean (Students), Prof. Vasa is responsible for the administration of hostels, student cultural and sports activities, and many other facilities.<br><br>
+                    
+                    [Add something about his availability/approachability for any student needs?]
+                    </p>
+                    <div class="hp-read-more-button">
+                        <a href="#">
+                        <button type="button" class="btn HP-readmore">Request an Appointment</button>
+                    </a>            
+                    </div> 
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="covid19-contacts">
+    <div class="container" style="max-width: 1600px;">
+        <div class="row" style="padding: 0;">
+            <div class="col-md-6 cv19-guidelines">
+                <div class="covid19">
+                    <!-- <h3 class="covid19-guidelines">COVID–19 Guidelines</h3>
+                    <p class="cv19-content">IIT Madras has implemented a rigorous COVID-19 protocol for the safety of its students, researchers, faculty, and support staff.
+<br><br>
+                        Read about our protocol and our opening timetable here:</p>
+                        <div class="hp-read-more-button">
+                            <a href="#">
+                            <button type="button" class="btn HP-readmore">Institute COVID–19 Protocol</button>
+                        </a>            
+                        </div> 
+                        <p class="cv19-content">Play an interactive game themed around the precautions against COVID–19.</p>
+                        <div class="hp-read-more-button">
+                            <a href="#">
+                            <button type="button" class="btn HP-readmore">Play Game</button>
+                        </a>            
+                        </div>
+                        <div class="hp-read-more-button">
+                            <a href="#">
+                            <button type="button" class="btn HP-readmore">Demo Video</button>
+                        </a>            
+                        </div> -->
+                </div>       
+            </div>
+            <div class="col-md-6">
+                <div class="eme-contact">
+                    <h3 class="Emergency-contact-title">Emergency Contacts</h3>
+                    <div class="contact-details">
+                        <ul>
+                            <li>Security: +91 44 2257 8260</li>
+                            <li>Hospital: +91 44 2257 8330</li> 
+                            <li>Ambulance: +91 44 2257 8333/8888</li> 
+                            <li>For Animals: +91 44 2257 8051</li> 
+                            <li>Counselling: +91 44 2257 5555</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    
+</section>
+
+<section class="sugg_form" style="background-color: #57EBDE;">
+    <div class="container" >
+        <div class="row" >
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Suggestion Box <span></span>
+                    </button>
+                  </h2>
+                  <h5 style="padding: 20px;">If you have feedback or suggestions about administrative processes, please fill in this form.</h5>
+                  
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><div class="row">
+
+                        <div class="col-md-12">
+            
+                            <!-- <h1 class="mb-3">Suggestion Form</h1> -->
+            
+            
+                            <form id="contact-form" method="post" action="https://www.htmlhints.com/recaptcha/contact" role="form">
+            
+                                <div class="messages"></div>
+            
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <!-- <label for="form_name">Firstname *</label> -->
+                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Name *" required="required"
+                                                    data-error="Firstname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <!-- <label for="form_lastname">Roll Number *</label> -->
+                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Roll Number *" required="required"
+                                                    data-error="RollNumber is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <!-- <label for="form_email">Email *</label> -->
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Email ID *" required="required"
+                                                    data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <!-- <label for="form_phone">Phone</label> -->
+                                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Contact Number">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="form-group">
+                                        <!-- <label for="form_message">Message *</label> -->
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required"
+                                            data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>            
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="Your site key" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+            
+            
+                                    <input type="submit" class="btn btn-success btn-send" value="Submit">
+            
+                                </div>
+            
+                            </form>
+            
+                        </div>
+                        <!-- /.8 -->
+            
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="con_form" style="background-color: #85F480;">
+    <div class="container" >
+        <div class="row" >
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Confidential Box <span></span>
+                    </button>
+                  </h2>
+                  <h5 style="padding: 20px;">Use this form to intimate the DoSt Office for any concerns you might have.</h5>
+                  
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><div class="row">
+
+                        <div class="col-md-12">
+            
+                            <!-- <h1 class="mb-3">Suggestion Form</h1> -->
+            
+            
+                            <form id="contact-form" method="post" action="https://www.htmlhints.com/recaptcha/contact" role="form">
+            
+                                <div class="messages"></div>
+            
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <!-- <label for="form_name">Firstname *</label> -->
+                                                <!-- <input id="form_name" type="text" name="name" class="form-control" placeholder="Name *" required="required"
+                                                    data-error="Firstname is required.">
+                                                <div class="help-block with-errors"></div> -->
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Type of Information</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Roll Number *</label>
+                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Roll Number *" required="required"
+                                                    data-error="RollNumber is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <!-- <label for="form_phone">Phone</label> -->
+                                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Name">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <!-- <label for="form_email">Email *</label> -->
+                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Email ID *" required="required"
+                                                    data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="row">
+                                    <div class="form-group">
+                                        <!-- <label for="form_message">Message *</label> -->
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required"
+                                            data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>            
+                               
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="upload_files" style="padding: 10px 0;"><b>Upload Supporting Files (Optional)</b></label><br>
+                                            <label style="padding: 10px 0;"><b>For a single supporting file</b> < 10 MB:</label><br>
+
+                                            <!-- <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Name"> -->
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1" style="padding: 10px 10px;
+                                            background-color: #fff;
+                                            border-radius: 8px; ">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="form_email"><b>For bigger files or multiple files:</b>
+                                                Please upload files to a file-sharing service (e.g. Google Drive or Dropbox), enable viewer access from the link, and paste the link below. Please note that the email ID associated with the file/folder might be visible to visitors.</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Link to Cloud file/folder *" required="required"
+                                                data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>                                        
+                                </div>
+                                 <div class="row">
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="Your site key" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+            
+            
+                                    <input type="submit" class="btn btn-success btn-send" value="Submit">
+            
+                                </div>
+            
+                            </form>
+            
+                        </div>
+                        <!-- /.8 -->
+            
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="hp-forms">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-6">
+                <div class="suggestion-box">
+                    <h4 class="suggestion-form-title">Suggestion Box</h4>
+                    <p class="suggestion-form-content">If you have feedback or suggestions about administrative processes, please let us know here.</p>
+
+                    <form action="/action_page.php">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="John"><br>
+                        <label for="RollNumber">RollNo:</label>  
+                        <input type="number" id="RollNumber" name="RollNumber"/><br/>
+                        <label for="email">Email: </label>  
+                        <input type="email" id="email" name="email"/><br/>  
+                        <input type="submit" value="Submit">
+                      </form>
+
+                </div>
+
+            </div>
+        </div>   -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="eme-contact">
+                    <h3 class="Emergency-contact-title">Get in Touch</h3>
+                    <p class="get-in-touch">The Office of the Dean (Students) is open from 9:00 am to 5:30 pm from Mondays to Fridays (excepting Government holidays).<br><br>
+
+                        <b>Phone:</b> (+91) 44 2257 8052<br>
+                        <b>Email:</b> dostoffice@smail.iitm.ac.in
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="hp-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.817974158075!2d80.22603841370845!3d12.990742868000408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0d9bd8389b298f2!2sDean%20of%20students%20office!5e0!3m2!1sen!2sin!4v1672117858197!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hp-map-main"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- page content ends -->
+  
+
+
+
+  <!-- footer starts -->
+
+  <section class="footer-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer">
+                <div class="footer-heading">
+                    <h3 class="footer-heading-content">Quick Links</h3>
+                    <p><a href="#" class="footer-atag">Latest announcements</a></p>
+                    <p><a href="#" class="footer-atag">Hostel & mess fees</a></p>
+                    <p><a href="#" class="footer-atag">Register your preferred mess</a></p>
+                    <p><a href="#" class="footer-atag">Book venues or buses</a></p>
+                    <p><a href="#" class="footer-atag">Submit digital posters</a></p>
+                    <p><a href="#" class="footer-atag">L-TAP</a></p>
+                    <p><a href="#" class="footer-atag">Mental health resources</a></p>
+                    <p><a href="#" class="footer-atag">Anti-ragging policy</a></p>                            
+                </div>                        
+            </div>
+            <div class="col-md-1">
+                <div class="vl"></div>
+            </div>
+
+            <div class="col-md-4 footer">
+                <div class="footer-heading">
+                    <h3 class="footer-heading-content">Emergency Contacts</h3>
+                    <p><a href="#" class="footer-atag"><b>Security :</b> +91 44 2257 8260</a></p>
+                    <p><a href="#" class="footer-atag"><b>Hospital :</b> +91 44 2257 8330</a></p>
+                    <p><a href="#" class="footer-atag"><b>Ambulance :</b> +91  44 2257 8333/8888</a></p>
+                    <p><a href="#" class="footer-atag"><b>For Animals :</b> +91 44 2257 8051</a></p>
+                    <p><a href="#" class="footer-atag"><b>Counselling :</b> +91 44 2257 5555</a></p>
+                </div>                        
+            </div>
+            <div class="col-md-1">
+                <div class="vl"></div>
+            </div>
+
+            <div class="col-md-3 footer">
+                <div class="footer-heading">
+                    <h3 class="footer-heading-content">Other Websites</h3>
+                    <p><a href="#" class="footer-atag">IIT Madras</a></p>
+                    <p><a href="#" class="footer-atag">CCW</a></p>
+                    <p><a href="#" class="footer-atag">Academic fees</a></p>
+                    <p><a href="#" class="footer-atag">Workflow (LAN)</a></p>
+                    <p><a href="#" class="footer-atag">Academics (LAN)</a></p>
+                    <p><a href="#" class="footer-atag">iKollege</a></p>
+                    <p><a href="#" class="footer-atag">Global Engagement</a></p>
+                    <p><a href="#" class="footer-atag">Alumni & Corporate Relations</a></p>                            
+                </div>                       
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sub-footer">
+    <div class="container">
+        <div class="row" style="padding: 20px 0px 10px 0px;">
+            <div class="col-md-2 footer-logo">
+                <img src="images/footer/iitm-logo.png" class="logo">
+            </div>
+            <div class="col-md-6 footer-logo-content">
+                <h2 class="logo-heading">Office of the Dean (Students)</h2>
+                <h5 class="logo-sub-heading">Indian Institute of Technology Madras<br>
+                    Chennai – 600 036, Tamil Nadu</h5>
+            </div>
+            <div class="col-md-4 skillskapes-content">
+                <h2 ><a href="#" class="skillskapes-heading">Designed & Developed by</a></h2>
+                <h5 class="skillskapes-sub-heading"><a href="https://www.skillskapes.com/" target="_blank" class="skillskapes-sub-heading">SkillSkapes</a></h5>
+                <h5 class="skillskapes-contact">IITM-RP,&nbsp;&nbsp;<a href="mailto:getinfo@skillskapes.com" class="Sk-contact">getinfo@skillskapes.com</a></h5>
+            </div>
+        </div>
+        <div class="row" style="padding: 10px 0px 10px 0px;">
+            <div class="col-md-12">
+                <h6 class="copyrights">© 2022 Indian Institute of Technology, Madras</h6>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer ends -->
+
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="validator.js"></script>
+  <script src="contact.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="main.js"></script>
+  <div id="footer"></div>
+</body>
+
+</html>

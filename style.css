@@ -1,0 +1,1487 @@
+/**
+* Template Name: Dost Website
+* Author: GEO
+* License: -
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: 'Lato', sans-serif;
+    color: #444444;
+}
+  
+  a {
+    color: #106eea;
+    text-decoration: none;
+}
+  
+  a:hover {
+    color: #3b8af2;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /*--------------------------------------------------------------
+  # Preloader
+  --------------------------------------------------------------*/
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #106eea;
+    border-top-color: #e2eefd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #84f359;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 28px;
+    color: #000;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #3284f1;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+  /* cakezone nav start */
+
+  :root {
+    --primary: #E88F2A;
+    --secondary: #FAF3EB;
+    --light: #FFFFFF;
+    --dark: #2B2825;
+}
+
+.font-secondary {
+    font-family: 'Pacifico', cursive;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.border-inner {
+    position: relative;
+}
+
+.border-inner * {
+    position: relative;
+    z-index: 1;
+}
+
+.border-inner::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background: none;
+    border: 1px solid var(--light);
+    z-index: 0;
+}
+
+.btn-square {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Lato', sans-serif;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+    background-color: #000;
+}
+.nav-link:focus{
+    color: #fff;
+    background-color: #000;
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+.text-primary{
+  color: #fff !important;
+}
+.dropdown-submenu a{
+  color: #fff;
+}
+.dropdown-submenu a:hover{
+  color: #fff;
+}
+.test{
+  padding: 10px 45px 10px 0px;
+}
+.test a:hover{
+ width: 100%;
+}
+.test::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.2565em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  transform: rotate(-90deg);
+  width: 10px;
+}
+li.dropdown-submenu:hover{
+  background-color: #000;
+  color: #fff;
+}
+.dropdown-submenu a:hover{
+  background: #000;
+}
+.dropdown-item a:hover{
+  background: #000;
+}
+.dropdown-item:focus{
+  background: #000;
+}
+.dropdown-item:active{
+  background-color: #000;
+}
+.dropdown-item, .dropdown-submenu {
+  display: block;
+  width: 100%;
+  padding: 0.70rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #fff;
+  text-align: inherit;
+  white-space: nowrap;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #333333;
+}
+.top-header-icon{
+  color: #fff;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        padding: 10px 0;
+    }
+}
+/* nav -end */
+
+  /* custom - nav bar */
+  .main-logo{
+    width: 200px;
+    height: auto;
+  }
+  .top-header-logo{
+    background-color: #000;
+  }
+  .top-bar-heading{
+    color: #fff;
+    font-family: 'Oswald', sans-serif !important;
+  }
+  .text-primary{
+    color: #E88F2A;
+  }
+
+
+  /* page content-header */
+  .row{
+    padding: 30px 0px 30px 0px;
+  }
+  /* common green- heading */
+  .green-heading{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(180deg, #57EBDE 0%, #AEFB2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 2px 2px 3px rgba(16, 16, 16, 0.075);
+  }
+  /* end */
+
+  /* Dean-students page */
+  .hero {
+    background: linear-gradient(#0006, #0006), url(images/header/dean-header.png);
+  /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+  /*   background-color: #eee; */
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+  }
+  
+  .hero-inner {
+    
+  /*   text-align: center; */
+    padding: 0 1.5rem;
+  }
+  
+  .hero-headline {
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Lato', Sans-serif;
+    font-size: 45px;
+    letter-spacing: 7px;
+    word-spacing: 5px;
+    /* background-color: #FFFFFFF2; */
+    padding:20px;
+    text-align: left;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.285);
+  }
+  /* end */
+
+  /* welcome new students */
+  .newstudents-hero {
+    background: linear-gradient(#0006, rgba(0, 0, 0, 0.842)), url(images/page-images/DoSt_library.png);
+  /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+  /*   background-color: #eee; */
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    
+  }
+  .admission, .Announcements{
+    background: linear-gradient(90deg, #004475 0%, #05645C 100%);
+    border-radius: 12px;
+    color: #fff !important;
+    font-family: 'Lato' sans-serif;
+    font-size: 15px !important;
+  }
+  .Institute-Admission-button{
+    text-align: center;
+  }
+  .Institute-Admission-content{
+    padding: 20px;
+
+  }
+  .Admission-content{
+    font-size: 18px;
+    font-weight: 300 !important;
+    font-family: 'Lato' sans-serif !important;
+    color:#000;
+    text-align: center;
+  }
+  .Certificate-Originals{
+    padding: 20px 10px 10px 10px;
+  }
+  .certi-org{
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif!important;
+    font-weight: 700 !important;
+  }
+  .certi-heading{
+    font-size: 17px;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 700 !important;
+  }
+  .certi-org-lists{
+    color: #000;
+    font-weight: 300 !important;
+    font-family: 'Lato', Sans-serif;
+    font-size: 17px;
+  }
+  .certificate-org{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .Hostel-accommodation{
+    background: #333333;
+  }
+  .hostel-accommodation-content{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300 !important;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+
+  }
+  .hostel-accommodation-content{
+    text-align: left;
+  }
+  .hostel-forms{
+    padding: 10px 10px 10px 10px;
+    
+  }
+  .hostel-forms-title{
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif!important;
+    font-weight: 700 !important;
+    color: #fff;
+    padding: 10px;
+  }
+  .hostel-forms-heading{
+    font-size: 17px;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 700 !important;
+    color: #fff;
+    padding: 10px;
+  }
+  .hostel-forms-lists{
+    color: #fff;
+    font-weight: 300 !important;
+    font-family: 'Lato', Sans-serif;
+    font-size: 17px;
+  }
+  .hostel-forms-content{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300 !important;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+  }
+  .hostel-management{
+    background: linear-gradient(90deg, #004475 0%, #05645C 100%);
+    border-radius: 12px;
+    color: #fff !important;
+    font-family: 'Lato' sans-serif;
+    font-size: 15px !important;
+    text-transform: uppercase;
+  }
+  .hostel-management-button{
+    text-align: left;
+    padding: 10px;
+  }
+  .general-info-title{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  .general-info-button{
+    text-align: center;
+  }
+  .general-info-description{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .general-info-desc{
+    padding: 10px;
+  }
+  .freshers-forum{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .freshers-forum{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300 !important;
+  }
+  .fresher-social a{
+    background: linear-gradient(180deg, #57EBDE 0%, #AEFB2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 2px 2px 3px rgba(16, 16, 16, 0.075);
+    padding: 10px;
+  }
+  .fresher-social{
+    text-align: center;
+    font-size: 30px;
+    gap: 20px;
+  }
+  /* end */
+
+  /* About Chennai */
+  .about-chennai-hero {
+    background: linear-gradient(#0006, rgba(0, 0, 0, 0.842)), url(images/header/about-chennai.png);
+  /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+  /*   background-color: #eee; */
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    
+  }
+  
+  .chennai-description{
+    font-size: 18px;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding: 10px;
+    color: #000;
+  }
+  .campus-description{
+    font-size: 18px;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding: 10px;
+    color: #000;
+    margin-top: 6%;
+    margin-bottom: auto;
+  }
+  .around-campus-img{
+    width: 100%;
+  } 
+  .tourist-img{
+    width: 100%;
+  }
+  .tourist-row{
+    padding: 30px 0px 60px 0px;
+  }
+  .carousel-caption{
+    position: relative !important;
+    margin: 0% !important;
+    width: 100%;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+    left: 0% !important;
+    right: 0% !important;
+    bottom: 0% !important;
+    top: 25%!important;
+    
+  }
+  .carousel-caption h5{
+    font-size: 30px;
+    font-weight: 700 !important;
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+  }
+  .carousel-caption p{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-weight: 300;
+  }
+  .carousel-indicators [data-bs-target]{
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50% !important;
+    background-color: #7afb2ab9 !important;
+    margin-bottom: 0rem;
+  }
+  .carousel-content{
+    vertical-align: middle !important;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: .5;
+    transition: opacity 0.15s ease;
+  }
+  #carouselExampleCaptions{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px 20px 30px 20px;
+  }
+  .tourist-place{
+    padding: 0px 0px 30px 0px;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    background: #000;
+  }
+
+
+/* end */
+
+
+/* nearby-accomodations */
+.hero-nearby{
+  background: linear-gradient(#0006, #0006), url(images/header/nearby-header.png);
+  /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+  /*   background-color: #eee; */
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+
+}
+.hotels{
+  position: relative;
+  width: 100%;
+}
+.Hotel-img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hotel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 48.77%);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.hotels:hover .hotel-overlay {
+  height: 100%;
+}
+.na{
+font-family: 'Oswald', sans-serif;
+color:#fff;
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+}
+.neraby-content{
+  font-family: "Lato",Sans-serif;;
+  color:#000;
+  font-size: 18px;
+  font-weight: 350  !important;
+ }
+.hotel-text {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 40%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  text-align: left;
+  padding: 20px;
+  
+}
+.hotel-text p{
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.hotel-img-list{
+  padding: 10px;
+}
+.nb-img{
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 4px;
+}
+.hotel-partners{
+  padding: 10px;
+}
+
+/* end  */
+
+
+  /* Homepage */
+
+#video-viewport {
+   position: relative; 
+   top: 0; 
+   left: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    z-index: -1; 
+  }
+video {
+   display: block; 
+   width: 100%; 
+   height:100%; 
+  }
+
+.fullsize-video-bg { 
+  height: 100%; 
+  overflow: hidden;
+background-color: rgba(0, 0, 0, 0.650); }
+
+.fullsize-video-bg .inner { display: table; 
+  width: 100%;
+  vertical-align: middle;
+    height: 100%; 
+    margin: 0 auto;
+    padding: 50px; 
+    position: relative;
+    z-index: 2; 
+    text-shadow: 0 1px 5px rgba(0,0,0,.5);
+    margin-bottom: -370px; 
+    }
+    .homepage-video-content{
+      font-size: 20px;
+      font-family: 'Lato', Sans-serif;
+      color: #f1f1f1;
+      /* width: 50%; */
+      padding: 20px;
+      font-weight: 300;
+    }
+    .homepage-video-headline {
+      margin: 0;
+      color: #fff;
+      font-weight: 500;
+      font-family: 'Lato', Sans-serif;
+      font-size: 45px;
+      letter-spacing: 7px;
+      word-spacing: 5px;
+      /* background-color: #FFFFFFF2; */
+      padding:20px;
+      text-align: left;
+    }
+    .current-events{
+      background: var(--02-gradient, linear-gradient(90deg, #004475 0%, #05645C 100%));
+      /* width: 50%; */
+      float: right;
+      padding: 10px;
+      position: absolute;
+      right: 10px;
+      border-radius: 10px;
+    }
+    .events_list{
+      width: 80%;
+    }
+    .current-events h3{
+      font-size: 30px;
+      font-family: 'Oswald', sans-serif;
+      color: #fff;
+      padding: 10px 10px;
+    }
+    .events_list h5{
+      font-family: 'Lato',sans-serif;
+      color: #fff;
+      font-weight: 300 !important;
+      font-size: 20px;
+      padding: 10px;
+    }
+    .events_list p{
+      font-family: 'Lato',sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      padding: 10px;
+    }
+    .Happening{
+      font-size: 45px;
+      font-weight: 900 !important;
+      font-family: 'Lato', sans-serif !important;
+    }
+    .Happening-content{
+      font-size: 17px;
+      font-family: 'Lato', sans-serif !important;
+      font-weight: 300 !important;
+      color: #000;
+    }
+    .Happening-date-name{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
+    .Happening-date, .Happening-name{
+      font-size: 13px;
+      font-family: 'Lato', sans-serif;
+      color: #666666;
+      font-weight: 700; 
+    }
+    .Happening-name{
+      text-align: right;
+      margin: 0 50px;
+    }
+    .HP-green-bg{
+      background-color:#85F480;
+      text-align: center;
+    }
+    .HP-green-bg:hover{
+      background: #05645C;
+      text-shadow: 0px 0px 10px #AEFB2A;
+    }
+    .HP-green-bg:hover .mess-reg{
+      filter: drop-shadow(0px 0px 10px #AEFB2A);
+    }
+    .HP-green-bg:hover .hp-quicklinks-name-black{
+      color: #fff;
+    }
+
+    .HP-black-bg{
+      background-color: #000;
+      text-align: center;
+    }
+    .HP-black-bg:hover {
+      background-color: #004475;
+      text-shadow: 0px 0px 10px #AEFB2A;
+    }
+    .HP-black-bg:hover .mess-reg{
+      filter: drop-shadow(0px 0px 10px #AEFB2A);
+    }
+
+    .HP-blue-bg{
+      background-color: #57EBDE;
+      text-align: center;
+    }
+    .HP-blue-bg:hover{
+      background-color: #004475;
+      text-shadow: 0px 0px 10px #AEFB2A;
+    }
+    .HP-blue-bg:hover .mess-reg{
+      filter: drop-shadow(0px 0px 10px #AEFB2A);
+    }
+    .HP-blue-bg:hover .hp-quicklinks-name-black{
+      color: #fff;
+    }
+    .Hp-blue, .HP-black, .HP-green{
+      padding: 10px;
+    }
+
+    .hp-quicklinks-name-black{
+      text-align: center;
+      font-size: 18px;
+      padding: 5px;
+      font-family: 'Lato', sans-serif;
+      color: #000;
+      font-weight: 300 !important;
+    }
+    .hp-quicklinks-name-white{
+      text-align: center;
+      font-size: 18px;
+      padding: 5px;
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+      font-weight: 300 !important;
+    }
+    .quick-links:hover .mess-reg {
+      text-shadow: 0px 0px 10px #AEFB2A;
+    }
+    .mess-reg{
+      width: 80%;
+      height: auto;
+      text-align: center;
+      padding: 10px;
+    }
+    .happening-column{
+      padding: 50px 0px 10px 0px ;
+      vertical-align: middle;
+      margin: 0px -60px 0px 60px;
+    }
+    .HP-dean{
+      background: #85F480;
+    }
+    .meet-dean{
+      font-size: 48px;
+      font-family: 'Oswald', sans-serif!important;
+      font-weight: 900 !important ;
+      font-style: normal;
+      text-align: center;
+    }
+    .meet-dean-video{
+      width: 90%;
+    }
+    .meet-dean-content{
+      font-size: 18px;
+      font-family: 'Lato', Sans-serif;
+      font-weight: 300;
+      text-align: left;
+      padding: 10px;
+      color: #000;
+    }
+    .HP-readmore{
+      background: linear-gradient(90deg, #004475 0%, #05645C 100%);
+      border-radius: 12px;
+      color: #fff !important;
+      font-family: 'Lato' sans-serif;
+      font-size: 15px !important;
+      text-transform: uppercase;
+    }
+    .hp-read-more-button{
+      padding: 10px;
+    }
+    .cv19-guidelines{
+      /* background: #000; */
+      background: url('../images/page-images/Blackbuck_1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      background-position: bottom;
+    }
+    .covid19-guidelines{
+      color: #fff;
+      font-size: 48px;
+      font-family: 'Oswald', sans-serif !important;
+      font-weight: 900 !important;
+      padding: 10px;
+    }
+    .cv19-content{
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 300 !important;
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+
+    }
+    .covid19, .eme-contact{
+      padding: 30px;
+    }
+    .Emergency-contact-title{
+      color: #000;
+      font-size: 48px;
+      font-family: 'Oswald', sans-serif !important;
+      font-weight: 900 !important;
+      padding: 10px;
+    }
+    .contact-details li{
+      padding: 10px;
+      list-style: none;
+      font-size: 18px;
+      color: #000;
+      font-family: 'Lato',sans-serif;
+      font-weight: 300;
+      margin-left: -30px;
+    }
+    .hp-forms{
+      /* background: #57EBDE; */
+    }
+    .get-in-touch{
+      font-size: 17px;
+      color: #000;
+    }
+    .hp-map-main{
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 3px;
+    }
+    .sugg_form .accordion-item{
+      background-color: #57EBDE;
+    }
+    .sugg_form .accordion-button{
+      font-size: 38px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      color: #000;
+      background-color: #57EBDE;
+    }
+    .sugg_form .accordion-button:not(.collapsed){
+      color: #000;
+      background-color: transparent;
+    }
+    .sugg_form .accordion-button:focus{
+      border-color: transparent;
+      box-shadow: 0 0px 0px rgb(0 0 0 / 0.2);
+    }
+    .sugg_form .form-control{
+      font-size: 25px;
+      border-radius: 8px;
+    }
+    .sugg_form .form-control::placeholder{
+      color: #b6b6b6;
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+    }
+    .sugg_form .btn{
+      background-color: #000;
+      font-size: 20px;
+      padding: 10px 40px;
+      border-radius: 8px;
+    }
+/* second Form */
+    .con_form .accordion-item{
+      background-color: #85F480;
+    }
+    .con_form .accordion-button{
+      font-size: 38px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      color: #000;
+      background-color: #85F480;
+    }
+    .con_form .accordion-button:not(.collapsed){
+      color: #000;
+      background-color: transparent;
+    }
+    .con_form .accordion-button:focus{
+      border-color: transparent;
+      box-shadow: 0 0px 0px rgb(0 0 0 / 0.2);
+    }
+    .con_form .form-control{
+      font-size: 25px;
+      border-radius: 8px;
+    }
+    .con_form .form-select{
+      font-size: 25px;
+      border-radius: 8px;
+      color: #585858;
+      font-family: 'Lato', sans-serif;
+    }
+    .con_form .form-select option{
+      font-size: 18px;
+    }
+    .con_form .form-control::placeholder{
+      color: #b6b6b6;
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+    }
+    .con_form .btn{
+      background-color: #000;
+      font-size: 20px;
+      padding: 10px 40px;
+      border-radius: 8px;
+    }
+
+  /* end */
+
+  /* Contact your Hostel */
+  .Contact-hostel-hero{
+    background: linear-gradient(#0006, #0006), url(images/header/Contact-hostel.png);
+    /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 40vh;
+    /*   background-color: #eee; */
+      display: flex;
+      justify-content: left;
+      align-items: flex-end;  
+  }
+
+  
+  /* dean of students page */
+  .deans-img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .dean-para{
+    margin-top: 5%;
+    margin-bottom: auto;
+  }
+  .dean-para-content{
+    font-size: 18px;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding: 10px;
+    color: #000;
+  }
+
+  .Ambit{
+    background-color: #333333;
+  }
+  .ambit-heading{
+    background: linear-gradient(180deg, #57EBDE 0%, #AEFB2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 35px;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  .ambit-sub-heading{
+    color: #fff;
+    font-family: 'Lato', Sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;    
+  }
+  .Ambit-list{
+    display: table;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  /* table */
+  table {
+    font-family: 'Lato', Sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: #000;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  th{
+    background: linear-gradient(180deg, #57EBDE 0%, #AEFB2A 100%);
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #f3fef2;
+  }
+  /* other IITs */
+  /* .item {
+    background-color: skyblue;
+    border-radius: 5px;
+    height: 180px;
+    width: 100%;
+  }
+  .IIT-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+  } */
+  .img-container{
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fff;
+  }
+  .img-container:hover .overlay {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+
+  }
+  .IITs-logos{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 3px #888888;
+    padding: 10px;
+
+  }
+  .IIT-name, .pincode, .IIT-contact{
+    display: flex;
+    text-align: left;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 10px 10px 10px;
+  }
+  .IIT-name{
+    font-size: 22px;
+  }
+  .IIT-contact{
+    font-size: 17px;
+  }
+  .pincode{
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+
+  /* footer */
+  .footer-hero {
+    background: linear-gradient(#0006, #0006), url(images/footer/footer-bg.png);
+  /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  /*   background-color: #eee; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-heading-content{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    background: linear-gradient(90deg, #FF9C22 -3.33%, #FFC700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .footer-atag{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .footer-atag:hover{
+    text-decoration: none;
+    
+    background: linear-gradient(90deg, #57EBDE 0%, #AEFB2A 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   transition: s;
+  }
+  .vl{
+    border-left: 1px solid #fff;
+    height: 400px;
+  }
+  .sub-footer{
+    background-color: #1A1A1A;
+  }
+  .logo{
+    width: 60%;
+    height: auto;
+  }
+  .logo-heading{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    margin-top: 25px;
+  }
+  .logo-sub-heading{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+  }
+  .copyrights{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
+/* skillskapes footer content */
+ .skillskapes-content{
+  text-align: center;
+  padding-top:15px;
+ }
+  .skillskapes-heading{
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Lato' sans-serif;
+    font-weight: 100;
+    
+  }
+  .skillskapes-sub-heading{
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DB7186 0%, #3F827D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 2.5px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+  }
+  .skillskapes-contact, .Sk-contact{
+    font-size:15px;
+    color: rgb(123, 122, 122);
+    font-weight: 300;
+  }
+  /* media Query  */
+@media only screen and (max-width: 600px) {
+  .row{
+    padding: 20px 0px 10px 0px;
+  }
+  .hero, .about-chennai-hero{
+    height: 20vh;
+  }
+  .hero-headline, .about-chennai-hero-headline{
+    font-size: 22px;
+  }
+  .dean-para-content{
+    font-size: 15px;
+  }
+  .ambit-heading{
+    font-size: 20px;
+  }
+  .ambit-sub-heading{
+    font-size: 16px;
+  }
+  .Ambit-list{
+    font-size: 15px;
+  }
+  .vl{
+    display: none;
+  }
+  .footer-heading-content{
+    font-size: 20px;
+  }
+  .footer-atag{
+    font-size: 15px;
+  }
+  .logo{
+    width: 25%;
+    height: auto;
+  }
+  .hover-box{
+    padding: 10px;
+  }
+  /* homepage */
+  .homepage-video-headline{
+    font-size: 20px;
+  }
+  .homepage-video-content{
+    font-size: 15px;
+    width: auto;
+  }
+  .fullsize-video-bg .inner{
+    padding: 0px;
+    margin:0px 0px -420px 0px;
+  }
+  .fullsize-video-bg{
+    height: 600px;
+  }
+  #video-viewport{
+    display: none;
+  }
+  video{
+    width: auto;
+  }
+  .green-heading{
+    font-size: 28px;
+  }
+  .happening-column{
+    margin: auto;
+    padding: 10px;
+    vertical-align: baseline;
+  }
+  .Happening{
+    font-size: 28px;
+  }
+  .Happening-content{
+    font-size: 15px;
+  }
+  .HP-green-bg, .HP-black-bg, .HP-blue-bg{
+    border-style: solid;
+    border-color: #fff;
+  }
+  .meet-dean-content, .cv19-content, .contact-details li{
+    font-size: 15px;
+  }
+  .meet-dean-video{
+    width: 100%;
+  }
+  .meet-dean, .covid19-guidelines, .Emergency-contact-title{
+    font-size: 32px;
+  }
+  .covid19, .eme-contact{
+    padding: 10px 0px 10px 0px;
+  }
+
+  /* about chennai */
+  .chennai-description, .campus-description{
+    padding: auto;
+    font-size: 15px !important;
+    margin: auto;
+  }
+  .carousel-caption h5{
+    font-size: 20px;
+  }
+  .carousel-caption p{
+    font-size: 15px;
+  }
+  .carousel-indicators [data-bs-target]{
+    margin-bottom: -20px;
+    height: 10px !important;
+    width: 10px !important;
+  }
+  
+  /* new-students */
+  .Admission-content{
+    font-size: 15px;
+  }
+  .hostel-accommodation-content, .general-info-description, .freshers-forum{
+    font-size: 15px;
+  }
+  .fresher-social{
+    font-size: 25px;
+  }
+
+  /* nearby-hotel */
+  .neraby-content{
+    font-size: 15px;
+  }
+  .hotel-text{
+    font-size: 20px;
+  }
+  .hotel-text p{
+    font-size: 16px;
+  }
+}
+
+/* for macbook */
+@media only screen and (min-width: 1200px) {
+  .fullsize-video-bg .inner{
+    padding: 0px;
+    margin:0px 0px -340px 0px;
+    padding: 20px;
+  }
+  video{
+    width: auto;
+  }
+
+}
